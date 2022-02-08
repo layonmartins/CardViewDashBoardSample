@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@drawable/elipse"/>
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/user"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Jacque lee"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/nunito"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Welcome Back!"
+                android:fontFamily="@font/nunito"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="#2D2D2D"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:src="@drawable/idea"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Idea"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="#2D2D2D"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:src="@drawable/suggestions"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Suggestions"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="#2D2D2D"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:src="@drawable/career"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Career"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="#2D2D2D"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:src="@drawable/medical"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Medical"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="#2D2D2D"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:src="@drawable/food"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Food"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="#2D2D2D"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        android:src="@drawable/workout"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Workout"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
